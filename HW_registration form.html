@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Registration form</title>
+    <style>
+        h2{
+            background-color: aqua;
+            text-align: center;
+            letter-spacing:2px ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create Your Profile</h2>
+    <form action="process.php" enctype="multipart/form-data">
+        <table border="1">
+            <tr>
+                <th>Name:</th>
+                <td>
+                <input type="text" name="" id="" placeholder="Full name">
+                </td>
+                <th>Phone:</th>
+                <td>
+                <input type="text" name="" id="" placeholder="Your Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>
+                    <input type="email" name="" id="" placeholder="Email">
+                </td>
+                <th>Nid:</th>
+                <td>
+                    <input type="text" name="" id="" placeholder="NID number">
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" id="" value="male" checked>Male
+                    <input type="radio" name="gender" id="" value="female" >Female
+                </td>
+                <th>Date of Birth:</th>
+                <td>
+                    <input type="date" name="date" id="">
+                </td>
+            </tr>
+            <tr>
+                <th>Education:</th>
+                <td>
+                    <input type="checkbox" name="ssc" id=""checked>S.S.C
+                    <input type="checkbox" name="ssc" id="">H.S.C
+                    <input type="checkbox" name="ssc" id="">B.Sc
+                    <input type="checkbox" name="ssc" id="">M.S.C
+                </td>
+                <th>District</th>
+                <td>
+                    <select name="" id="">
+                        <option value="" >Dhaka</option>
+                        <option value="">Cumllah</option>
+                        <option value=""selection>Mirpur</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Attach Your Certificate</th>
+                <td colspan="2">
+                    <input type="file" name="file">
+                </td>
+            </tr>
+            <tr>
+                <th>Mailing Address</th>
+                <td colspan="2">
+                    <textarea name="Address" id="" cols="50" rows="4"></textarea>
+                </td>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
